@@ -10,3 +10,6 @@ Some of algorithms used in computer science undergraduate degree
   * Insertion Sort
   * Selection Sort
   * Comb Sort
+
+## Artificial Intelligence
+  * PageRank
