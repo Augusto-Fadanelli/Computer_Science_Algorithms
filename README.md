@@ -1,4 +1,4 @@
-# Computer_Science_Algorithms
+# Computer Science Algorithms
 Some of algorithms used in computer science undergraduate degree
 
 ## Data Structures
