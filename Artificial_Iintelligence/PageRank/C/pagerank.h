@@ -2,34 +2,31 @@
 #define _PAGERANK_H
 
 #include <stdio.h>
-#include <stdlib.h>
 
-#define P 4 //numPages
+#define P 5 //numPages
 
 double pagerank(const bool **pages, const int whichPage, const int numPages){
+
     bool links[numPages];
     getLinks(pages, whichPage, numPages, links);
 
-    //inicialize status page rank
     static double pr[P]; //PageRank
+    static double oldPR[P]; //Old values of PageRank
 
-    //inicialize old status PageRank
-    static double oldPR[P];
+    //If it's first loop
     static first = true;
     if(first){
-        for(int i=0; i<numPages; i++){
-            oldPR[i] = 1.0f;
-        }
+        inicializeArray(oldPR, numPages, 1.0f);
         first = false;
     }
 
+    //Calculate PageRank
     for(int i=0; i<numPages; i++){
         if(1 == links[i]){
             pr[whichPage] += oldPR[i]/(double)numberOfLinks(pages, i, numPages);
         }
     }
-
-    pr[whichPage] = 0.15f + 0.85f * pr[whichPage];
+    pr[whichPage] = 0.15f + 0.85f * pr[whichPage]; //85 represents the probability in % that someone will click the link
 
     double valuePR = pr[whichPage];
 
@@ -40,15 +37,14 @@ double pagerank(const bool **pages, const int whichPage, const int numPages){
         for(int i=0; i<numPages; i++){
             oldPR[i] = pr[i];
         }
-        for(int i=0; i<numPages; i++){
-            pr[i] = 0.0f;
-        }
+        inicializeArray(pr, numPages, 0.0f);
         cont = 0;
     }
 
     return valuePR;
 }
 
+//Get links from other pages that point to the current page
 void getLinks(const bool **pages, const int wichPage, const int numPages, bool *links){
     for(int i=0; i<numPages; i++){
         if(1 == pages[i][wichPage]){
@@ -63,6 +59,7 @@ void getLinks(const bool **pages, const int wichPage, const int numPages, bool *
     }
 }
 
+//Count the number of links in page
 int numberOfLinks(const bool **pages, const int whichPage, const int numPages){
     int numLinks = 0;
     for(int j=0; j<numPages; j++){
@@ -71,6 +68,12 @@ int numberOfLinks(const bool **pages, const int whichPage, const int numPages){
         }
     }
     return numLinks;
+}
+
+void inicializeArray(double *vet, int sizeOfArray, double value){
+    for(int i=0; i<sizeOfArray; i++){
+        vet[i] = value;
+    }
 }
 
 #endif
