@@ -12,4 +12,4 @@ Some of algorithms used in computer science undergraduate degree
   * Comb Sort
 
 ## Artificial Intelligence
-  * PageRank
+  * [PageRank](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Artificial_Iintelligence/PageRank/C)
