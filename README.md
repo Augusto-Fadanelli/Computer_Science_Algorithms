@@ -15,4 +15,4 @@ Some of algorithms used in computer science undergraduate degree
   * Simple Multiply Two Big Integers Algorithm Using Divide And Conquer
 
 ## Artificial Intelligence
-  * PageRank
+  * [PageRank](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Artificial_Iintelligence/PageRank/C)
