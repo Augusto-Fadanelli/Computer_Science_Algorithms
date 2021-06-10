@@ -6,9 +6,9 @@
 
 int main()
 {
-    int tamA = 5;
+    int tamA = 2;
     char numA[tamA];
-    strcpy(numA, "98993");
+    strcpy(numA, "98");
 
     int tamB = 3;
     char numB[tamB];
