@@ -12,7 +12,7 @@ Some of algorithms used in computer science undergraduate degree
   * Comb Sort
 
 ## Divide and Conquer
-  * Simple Multiply Two Big Integers Algorithm Using Divide And Conquer
+  * [Simple Multiply Two Big Integers Algorithm Using Divide And Conquer](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Divide_and_Conquer/SimpleMultiplyTwoBigIntegersAlgorithm)
 
 ## Artificial Intelligence
   * [PageRank](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Artificial_Iintelligence/PageRank/C)
