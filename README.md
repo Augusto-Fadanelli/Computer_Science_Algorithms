@@ -11,5 +11,8 @@ Some of algorithms used in computer science undergraduate degree
   * Selection Sort
   * Comb Sort
 
+## Divide and Conquer
+  * Simple Multiply Two Big Integers Algorithm Using Divide And Conquer
+
 ## Artificial Intelligence
   * PageRank
