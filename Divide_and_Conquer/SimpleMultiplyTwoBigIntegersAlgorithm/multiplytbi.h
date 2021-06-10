@@ -10,28 +10,29 @@
 #include <math.h>
 
 //Function prototypes
-void mtbi(const char *a, const char *b, const int numberOfDigitsA, const int numberOfDigitsB);
+unsigned long long int mtbi(const char *a, const char *b, const int numberOfDigitsA, const int numberOfDigitsB);
 unsigned long long int mult(const int numberOfDigitsA, const int numberOfDigitsB, const unsigned long long int aL, const unsigned long long int aR, const unsigned long long int bL, const unsigned long long int bR);
 unsigned long long int split(const char *vet, const int numberOfDigits, const char op);
 
-void mtbi(const char *a, const char *b, const int numberOfDigitsA, const int numberOfDigitsB){
+unsigned long long int mtbi(const char *a, const char *b, const int numberOfDigitsA, const int numberOfDigitsB){
 
     unsigned long long int aL = split(a, numberOfDigitsA, 'L');
     unsigned long long int aR = split(a, numberOfDigitsA, 'R');
 
-    printf("aL: %d\naR: %d\n\n", aL, aR);
+    printf("aL: %d\n", aL);
+    printf("aR: %d\n\n", aR);
 
     unsigned long long int bL = split(b, numberOfDigitsB, 'L');
     unsigned long long int bR = split(b, numberOfDigitsB, 'R');
 
-    printf("bL: %d\nbR: %d\n\n", bL, bR);
+    printf("bL: %d\n", bL);
+    printf("bR: %d\n\n", bR);
 
     //if(a/10 == 0 || b/10 == 0){ //if there's only one digit
         //printf("Result: %d\n", a*b);
     //}else{
-
-        //int teste = x1 * pow(10, n) + (x2 + x3) * pow(10, (n/2)) + x4;
-        printf("Result: %d\n", mult(numberOfDigitsA, numberOfDigitsB, aL, aR, bL, bR));
+        //printf("Result: %d\n", mult(numberOfDigitsA, numberOfDigitsB, aL, aR, bL, bR));
+        return mult(numberOfDigitsA, numberOfDigitsB, aL, aR, bL, bR);
     //}
 
 }
@@ -47,6 +48,11 @@ unsigned long long int mult(const int numberOfDigitsA, const int numberOfDigitsB
     unsigned long long int x2 = (aL * bR);
     unsigned long long int x3 = (aR * bL);
     unsigned long long int x4 = (aR * bR);
+
+    printf("x1: %d\n", x1);
+    printf("x2: %d\n\n", x2);
+    printf("x3: %d\n", x3);
+    printf("x4: %d\n\n", x4);
 
     return x1 * pow(10, n) + (x2 + x3) * pow(10, (n/2)) + x4;
 }
