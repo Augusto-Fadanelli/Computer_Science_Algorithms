@@ -7,7 +7,7 @@ Some of algorithms used in computer science undergraduate degree
 
 ## Sorting Algorithms
   * Bubble Sort
-  * Insertion Sort
+  * [Insertion Sort](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Sorting%20Algorithms/insertionSort/C)
   * Selection Sort
   * Comb Sort
 
