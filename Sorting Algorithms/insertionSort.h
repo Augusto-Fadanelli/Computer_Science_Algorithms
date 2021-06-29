@@ -1,8 +1,6 @@
 #ifndef _INSERTIONSORT_H
 #define _INSERTIONSORT_H
 
-#include <stdio.h>
-
 void insertionSort(int *vet, int n){
 
     int aux; //Variable used to exchange integers in vector positions
