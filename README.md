@@ -6,8 +6,8 @@ Some of algorithms used in computer science undergraduate degree
   * Doubly Linked List
 
 ## Sorting Algorithms
-  * Bubble Sort
-  * [Insertion Sort](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Sorting%20Algorithms/insertionSort/C)
+  * [Bubble Sort](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Sorting_Algorithms/bubbleSort/C)
+  * [Insertion Sort](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Sorting_Algorithms/insertionSort/C)
   * Selection Sort
   * Comb Sort
 
@@ -15,4 +15,4 @@ Some of algorithms used in computer science undergraduate degree
   * [Simple Multiply Two Big Integers Algorithm Using Divide And Conquer](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Divide_and_Conquer/SimpleMultiplyTwoBigIntegersAlgorithm)
 
 ## Artificial Intelligence
-  * [PageRank](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Artificial_Iintelligence/PageRank/C)
+  * [PageRank](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Artificial_Intelligence/PageRank/C)
