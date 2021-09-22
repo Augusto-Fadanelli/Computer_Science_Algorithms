@@ -15,7 +15,7 @@ Some of algorithms used in computer science undergraduate degree
   * [Simple Multiply Two Big Integers Algorithm Using Divide And Conquer](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Divide_and_Conquer/SimpleMultiplyTwoBigIntegersAlgorithm)
 
 ## Tree Algorithms
-  * [Recursive Binary Tree](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Tree_Algorithms/binaryTree)
+  * [Recursive Binary Tree](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Tree_Algorithms/recursiveBinaryTree)
   * [Iterative Binary Tree](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Tree_Algorithms/iterativeBinaryTree)
 
 ## Artificial Intelligence
