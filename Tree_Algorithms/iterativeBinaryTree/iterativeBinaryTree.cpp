@@ -21,7 +21,6 @@ int mallocVerify(tree *, tree *); //Verifica se malloc conseguiu encontrar um es
 int main(){
     setlocale(LC_ALL, "Portuguese");
 
-	 tree *no = NULL;
     tree *root = NULL;
     int flag = 0;
     int id;
@@ -84,7 +83,7 @@ tree *_add(tree *newid, int id){
 			}
 			if(id < aux->id && aux->left == NULL){
 				aux->left = createNo(id);
-				return aux->left;
+				return 0;
 			}
 			
 			while(id > aux->id && aux->right != NULL){
@@ -92,7 +91,7 @@ tree *_add(tree *newid, int id){
 			}
 			if(id > aux->id && aux->right == NULL){
 				aux->right = createNo(id);
-				return aux->right;
+				return 0;
 			}
 		}
 	}
