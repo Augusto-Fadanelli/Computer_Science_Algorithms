@@ -13,7 +13,7 @@ typedef struct tree{
 
 tree * _add(tree *, int);
 tree *createNo(int);
-void show(tree *);
+void search(tree *, int);
 
 int menu();
 int mallocVerify(tree *, tree *); //Verifica se malloc conseguiu encontrar um espaço de memória livre para no* novo
@@ -40,7 +40,9 @@ int main(){
 
         break;
         case 2:
-            show(root);
+			   cout << "Insira a chave que deseja buscar: ";
+			   cin >> id;
+            search(root, id);
             cout << endl;
             //pause();
             //clear();
@@ -64,7 +66,7 @@ int menu(){
 
     cout << "*****ÁRVORES*****" << endl;
     cout << "[1] - Inserir" << endl;
-    cout << "[2] - Listar" << endl;
+    cout << "[2] - Buscar" << endl;
     cout << "[3] - Sair" << endl;
     cin >> op;
 
@@ -74,7 +76,6 @@ int menu(){
 tree *_add(tree *newid, int id){
 	tree *aux = NULL;
 	aux = newid;
-	int i=1;
 	
 	if(aux != NULL){
 		while(true){
@@ -108,13 +109,22 @@ tree *createNo(int id){
     return newid;
 };
 
-void show(tree *root){
-	if(root->left != NULL){
-		show(root->left);
+void search(tree *root, int id){
+	tree *aux = NULL;
+	aux = root;
+	
+	while(aux->id != id && (aux->left != NULL || aux->right != NULL)){
+		while(aux->id > id && aux->id != id && aux->left != NULL){
+			aux = aux->left;
+		}
+		while(aux->id < id && aux->id != id && aux->right != NULL){
+			aux = aux->right;
+		}
 	}
-	printf("%d, ", root->id);
-	if(root->right != NULL){
-		show(root->right);
+	if(aux->id == id){
+		cout << "Chave encontrada!" << endl;
+	}else{
+		cout << "Chave não encontrada!" << endl;
 	}
 }
 
