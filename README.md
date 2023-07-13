@@ -18,5 +18,8 @@ Some of algorithms used in computer science undergraduate degree
   * [Recursive Binary Tree](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Tree_Algorithms/recursiveBinaryTree)
   * [Iterative Binary Tree](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Tree_Algorithms/iterativeBinaryTree)
 
+## Graph Theory
+  * [Adjacency Matrix](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Graph_Theory/adjacency-matrix.c)
+
 ## Artificial Intelligence
   * [PageRank](https://github.com/Augusto-Fadanelli/Computer_Science_Algorithms/tree/main/Artificial_Intelligence/PageRank/C)
